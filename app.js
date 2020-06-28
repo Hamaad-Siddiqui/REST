@@ -12,8 +12,11 @@ const accountRoute = require("./routes/account");
 dotenv.config();
 
 // Connect To DB
-mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () =>
-  console.log("Connected To DataBase")
+mongoose.connect(
+  process.env.DB_CONNECTION,
+  { useNewUrlParser: true }
+  // () =>
+  // console.log("Connected To DataBase")
 );
 
 // Converting Posts to JSON with BodyParser
@@ -28,5 +31,5 @@ app.get("/", (req, res) => {
   res.send("HomePage");
 });
 
-// Listening to Server [Testing]
+// Listening to Server
 // app.listen(3000, () => console.log("Listening On Port 3000"));
