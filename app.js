@@ -32,4 +32,4 @@ app.get("/", (req, res) => {
 });
 
 // Listening to Server
-// app.listen(3000, () => console.log("Listening On Port 3000"));
+app.listen(process.env.PORT || 80), () => console.log("Server Up & Running");
