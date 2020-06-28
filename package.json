@@ -2,9 +2,9 @@
   "name": "js",
   "version": "1.0.0",
   "description": "Rest Api",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "author": "Hamaad Siddiqui",
   "license": "ISC",
