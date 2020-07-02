@@ -18,8 +18,8 @@ app.use(bodyParser.json());
 mongoose.connect(
   process.env.DB_CONNECTION,
   { useNewUrlParser: true }
-  () =>
-  console.log("Connected To DataBase")
+  // () =>
+  // console.log("Connected To DataBase")
 );
 
 // Route MiddleWare
